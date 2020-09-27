@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "MyLearningApp",
+    "slug": "MyLearningApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#e63c4b"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/logo-red.jpeg"
+    },
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "description": "",
+    "extra": {
+      "bugsnag": {
+        "apiKey": "86ea63273ce831302a8654ce6dc82a93"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
