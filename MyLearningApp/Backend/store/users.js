@@ -7,19 +7,19 @@ const users = [
   },
   {
     id: 2,
-    name: "Mosh",
-    email: "mosh@domain.com",
+    name: "Akshay Kumar",
+    email: "akshay@domain.com",
     password: "12345",
   },
 ];
 
 const getUsers = () => users;
 
-const getUserById = id => users.find(user => user.id === id);
+const getUserById = (id) => users.find((user) => user.id === id);
 
-const getUserByEmail = email => users.find(user => user.email === email);
+const getUserByEmail = (email) => users.find((user) => user.email === email);
 
-const addUser = user => {
+const addUser = (user) => {
   user.id = users.length + 1;
   users.push(user);
 };
